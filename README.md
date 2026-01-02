@@ -1,13 +1,18 @@
 # llm-course
 
-An AI LLM prototype written in plain python, only for personnal educational purpose.
+An AI LLM prototype written in plain python, only for personnal educational purpose. Work in progress.
 
 Using these tools : 
 
-- Python Anaconda, 
-- Pytorch, an optimized tensor library for deep learning,
-- Cuda for parallel GPU computing, 
-- Jupyter for documentational programming.
+- Python Anaconda, langage distribution made for research and deep-learning
+
+- Ipykernel, for handling python3 kernels with virtual environments
+
+- Pytorch, an optimized tensor library for deep learning
+
+- Cuda, for parallel GPU computing
+
+- Jupyter for documentational programming
 
 ## Summary
 
@@ -19,9 +24,9 @@ Using these tools :
 
     - [Fedora 42](#fedora-42)
 
-- [Install dependencies](#install-dependencies)
+- [Setup Virtual Environment](#setup-virtual-environment)
 
-[Launch](#launch-jupyter-notebook)
+[Launch](#launch)
 
 - [Jupyter Notebook](#jupyter-notebook)
 
@@ -65,7 +70,7 @@ sudo dnf install python3-pip
 sudo dnf install python3.13-venv
 ```
 
-### Install dependencies
+### Setup Virtual Environment
 
 ```bash
 cd ~/llm-course
@@ -73,11 +78,11 @@ cd ~/llm-course
 # Launch virtual env
 python3 -m venv cuda
 
-# Install libs
-pip3 install matplotlib numpy ipykernel jupyter pylzma
+# Install libs in virtual env
+cuda/bin/pip3 install matplotlib numpy ipykernel jupyter pylzma
 
-# Install pytorch
-pip3 install torch --index-url https://download.pytorch.org/whl/cu118
+# Install pytorch framework in virtual env
+cuda/bin/pip3 install torch --index-url https://download.pytorch.org/whl/cu118
 ```
 
 ## Launch 
