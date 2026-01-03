@@ -1,3 +1,3 @@
 #! /bin/bash
 
-jupyter notebook ./src
+jupyter notebook .

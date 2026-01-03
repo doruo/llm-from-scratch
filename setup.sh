@@ -1,6 +1,6 @@
 #! /bin/bash
 
-# Change it depending on your os
+# Change it depending on your os or package manager
 package_manager="apt"
 
 libs="matplotlib numpy ipykernel jupyter pylzma"

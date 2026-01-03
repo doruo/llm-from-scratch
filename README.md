@@ -2,6 +2,16 @@
 
 An AI LLM prototype written in plain python, only for personnal educational purpose. Work in progress.
 
+We build a Generatively Pretrained Transformer (GPT), following the paper "Attention is All You Need" and OpenAI's GPT-2 / GPT-3.
+
+This course was possible by the help of those two videos:
+
+- [Andrej Karpathy - Let's build GPT: from scratch, in code, spelled out.](https://www.youtube.com/watch?v=kCc8FmEb1nY)
+
+- [freeCodeCamp.org - Create a Large Language Model from Scratch with Python – Tutorial](https://www.youtube.com/watch?v=UU1WVnMk4E8)
+
+It was made for educationnal purpose and understanding what is happening under the hood.
+
 Using these tools : 
 
 - Python Anaconda, langage distribution made for research and deep-learning
@@ -14,81 +24,14 @@ Using these tools :
 
 - Jupyter for documentational programming
 
-## Summary
-
-[Setup](#setup)
-
-- [Install Python](#install-python)
-
-    - [Ubuntu or Debian 13](#ubuntu-or-debian-13)
-
-    - [Fedora 42](#fedora-42)
-
-- [Setup Virtual Environment](#setup-virtual-environment)
-
-[Launch](#launch)
-
-- [Jupyter Notebook](#jupyter-notebook)
-
 ## Setup
 
-Open a terminal in project folder, and follow these commands :
-
-### Install Python
-
-#### Ubuntu or Debian 13
-
 ```bash
-# Update package manager
-sudo apt update
-
-# Install python
-sudo apt install python3
-
-# Install python package manager
-sudo apt install python3-pip
-
-# Install python virtual env
-sudo apt install python3.13-venv
-```
-
-OR
-
-#### Fedora 42
-
-```bash
-# Update package manager
-sudo dnf update
-
-# Install python
-sudo dnf install python3
-
-# Install python package manager
-sudo dnf install python3-pip
-
-# Install python virtual env
-sudo dnf install python3.13-venv
-```
-
-### Setup Virtual Environment
-
-```bash
-cd ~/llm-course
-
-# Launch virtual env
-python3 -m venv cuda
-
-# Install libs in virtual env
-cuda/bin/pip3 install matplotlib numpy ipykernel jupyter pylzma
-
-# Install pytorch framework in virtual env
-cuda/bin/pip3 install torch --index-url https://download.pytorch.org/whl/cu118
+bash setup.sh
 ```
 
 ## Launch 
 
-### Jupyter Notebook
-
 ```bash
-jupyter notebook
+bash start.sh
 ```
