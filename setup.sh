@@ -3,9 +3,6 @@
 # Change it depending on your os or package manager
 package_manager="apt"
 
-libs="matplotlib numpy ipykernel jupyter pylzma"
-pytorch_url="https://download.pytorch.org/whl/cu118"
-
 # Update package manager
 sudo $package_manager update
 
@@ -20,6 +17,9 @@ sudo $package_manager install python3.13-venv
 
 # Launch virtual env
 python3 -m venv cuda
+
+libs="ipykernel jupyter matplotlib numpy pylzma"
+pytorch_url="https://download.pytorch.org/whl/cu118"
 
 # Install libs in virtual env
 cuda/bin/pip3 install $libs
