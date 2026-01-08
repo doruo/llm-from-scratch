@@ -33,5 +33,5 @@ bash setup.sh
 ## Launch 
 
 ```bash
-bash start.sh
+bash run.sh
 ```
