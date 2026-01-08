@@ -1,7 +1,7 @@
 #! /bin/bash
 
 # Change it depending on your os or package manager
-package_manager="apt"
+package_manager="dnf"
 
 # Update package manager
 sudo $package_manager update
@@ -18,11 +18,16 @@ sudo $package_manager install python3.13-venv
 # Launch virtual env
 python3 -m venv cuda
 
+# Update pip
+python3 -m pip install --upgrade pip
+
+# update pip in virtual env
+cuda/bin/python3 -m pip install --upgrade pip
+
 libs="ipykernel jupyter matplotlib numpy pylzma"
-pytorch_url="https://download.pytorch.org/whl/cu118"
 
 # Install libs in virtual env
 cuda/bin/pip3 install $libs
 
 # Install pytorch framework in virtual env
-cuda/bin/pip3 install torch --index-url $pytorch_url
+cuda/bin/pip3 install torch --index-url https://download.pytorch.org/whl/cu118
