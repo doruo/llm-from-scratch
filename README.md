@@ -1,5 +1,4 @@
-# llm from scratch
-
+# LLM From Scratch
 An AI LLM prototype written in plain python, only for personnal educational purpose. WORK IN PROGRESS.
 
 It is a Generatively Pretrained Transformer (GPT), following the paper ["Attention is All You Need"](https://arxiv.org/abs/1706.03762) and OpenAI's [GPT-2](https://huggingface.co/openai-community/gpt2) / [GPT-3](https://fr.wikipedia.org/wiki/GPT-3).
@@ -16,15 +15,15 @@ I tried to learn and resume a course based on those two great videos :
 
 Using these tools : 
 
-- Python Anaconda, langage distribution made for research and deep-learning
+- [Anaconda](https://www.anaconda.com/docs), langage distribution made for research and deep-learning
 
-- Ipykernel, for handling python3 kernels with virtual environments
+- [PyTorch](https://pytorch.org/), an optimized tensor library for deep learning
 
-- Pytorch, an optimized tensor library for deep learning
+- [Nvidia CUDA API](https://www.anaconda.com/docs/getting-started/working-with-conda/packages/gpu-packages), for [GPU computation](https://en.wikipedia.org/wiki/General-purpose_computing_on_graphics_processing_units)
 
-- CUDA, for parallel GPU computing
+- [Jupyter Notebook](https://jupyter.org/), for creating and sharing computational documents ([web sample here](https://jupyter.org/try-jupyter/notebooks/?path=notebooks/Intro.ipynb)).
 
-- Jupyter, for python notebooks
+- [Ipykernel](https://pypi.org/project/ipykernel/), IPython Kernel for Jupyter, we'll use it for creating virtual environments
 
 ## Setup
 
