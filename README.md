@@ -1,8 +1,8 @@
 # llm from scratch
 
-An AI LLM prototype written in plain python, only for personnal educational purpose. Work in progress.
+An AI LLM prototype written in plain python, only for personnal educational purpose. WORK IN PROGRESS.
 
-It is a Generatively Pretrained Transformer (GPT), following the paper "Attention is All You Need" and OpenAI's GPT-2 / GPT-3.
+It is a Generatively Pretrained Transformer (GPT), following the paper ["Attention is All You Need"](https://arxiv.org/abs/1706.03762) and OpenAI's [GPT-2](https://huggingface.co/openai-community/gpt2) / [GPT-3](https://fr.wikipedia.org/wiki/GPT-3).
 
 It was made for educationnal purpose only and understanding what is happening under the hood.
 
