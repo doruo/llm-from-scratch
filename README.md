@@ -31,8 +31,14 @@ Using these tools :
 bash setup.sh
 ```
 
-## Launch 
+## Start bigram model and text generation
 
 ```bash
-bash run.sh
+bash run-bigram.sh
+```
+
+## Launch notebook
+
+```bash
+bash run-notebook.sh
 ```
